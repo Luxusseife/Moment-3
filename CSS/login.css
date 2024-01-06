@@ -161,13 +161,14 @@ nav a:hover {
 }
 
 /* Pil-element bredvid nav-länk. */
-nav .fa-solid, main .fa-solid {
+nav .fa-solid  {
     color: rgb(0, 0, 0, 0.75);
-    margin: 15px;
+    margin: 5px;
 }
 
-#nav-caret:hover {
-    color: #ffffff;
+main .fa-solid {
+    color: rgb(0, 0, 0, 0.75);
+    margin: 15px;
 }
 
 /* Meny-knapp, öppnar menyn nav. */
@@ -302,11 +303,6 @@ nav .fa-solid, main .fa-solid {
         background-color:#D6ECE8;
         color: #395513;
         text-decoration: none;
-    }
-
-    #nav-caret:hover {
-        background-color: #D6ECE8;
-        color: #395513;
     }
 
     .login-button a {

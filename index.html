@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hässleholms Färdtjänst - inloggning</title>
+
+    <link rel="icon" href="Assets/favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/ogy3xgi.css">
+    <link rel="stylesheet" href="CSS/index.css" type="text/css">
+    <script src="https://kit.fontawesome.com/e49202e377.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html"><img id="logo" src="Assets/logo.png" alt="Logotyp"></a>
+
+        <!-- Menyknapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">MENY</span>
+        </button>
+        
+        <!-- Navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">STÄNG</span>
+            </button>
+            <ul>
+                <li><a href="./login.html">Startsida<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./my-trips.html">Mina resor<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./profile.html">Profil<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./login.html">Logga ut<i class="fa-solid fa-caret-right"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nuts-container">
+        
+            <h1>Vad vill du göra idag?</h1>
+            
+            <div class="button-container">
+                <span class="booking-button">
+                    <a href="./booking.html">Boka resa<i class="fa-solid fa-caret-right"></i></a>
+                </span>
+            
+                <span class="my-trips-button">
+                    <a href="./my-trips.html">Se Mina resor<i class="fa-solid fa-caret-right"></i></a>
+                </span>
+            
+                <span class="profile-button">
+                    <a href="./profile.html">Se profil<i class="fa-solid fa-caret-right"></i></a>
+                </span>
+            </div>
+    
+            <div class="info-choices">
+                <h2>Information</h2>
+                <p>
+                    Välj <b>Boka resa</b> om du vill:
+                </p>
+                <br>
+                    <ul>
+                        <li>boka en ny resa.</li>
+                    </ul>
+                    <br>
+                    <br>
+                <p>    
+                    Välj <b>Se Mina resor</b> om du vill:
+                </p>
+                <br>
+                    <ul>
+                        <li>se dina redan bokade resor eller sparade resor.</li>
+                        <li>boka nya resor utifrån dina bokade resor eller sparade resor.</li>
+                        <li>ändra eller avboka dina bokade resor.</li>
+                    </ul>
+                    <br>
+                    <br>
+                <p>    
+                    Välj <b>Se Profil</b> om du vill:
+                </p>
+                <br>
+                    <ul>
+                        <li>se din profil med uppgifter om din person och dina behov.</li>
+                        <li>ändra uppgifter i din profil.</li>
+                    </ul>
+            </div>
+        
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>
+            <a href="./about">Om Hässleholms Färdtjänst<i class="fa-solid fa-caret-right"></i></a>
+            <br>
+            <a href="./accesability">Tillgänglighetsredogörelse<i class="fa-solid fa-caret-right"></i></a>
+        </p>
+    </footer>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
