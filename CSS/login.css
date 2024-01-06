@@ -31,14 +31,17 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     font-family: "Myriad-Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 26px;
     color:rgba(0, 0, 0, 0.75);
+    margin: 0.5rem 0 0 0;
 }
 
 h3 {
+    text-align: center;
     font-family: "Myriad-Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -80,7 +83,7 @@ footer a:hover {
 }
 
 /* Pil-element i footern. */
-#footer-caret {
+footer .fa-solid {
     color: #ffffff;
     font-size: 20px;
     margin-left: 5px;
@@ -116,6 +119,7 @@ nav {
     font-size: 1.4rem;
     width: 300px;
     height: 100vh;
+    z-index: 1;
 }
 
 nav ul {
@@ -150,10 +154,20 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    background-color: #40403F;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 /* Pil-element bredvid nav-länk. */
-#nav-caret {
-    color: #395513;
+nav .fa-solid, main .fa-solid {
+    color: rgb(0, 0, 0, 0.75);
     margin: 15px;
+}
+
+#nav-caret:hover {
+    color: #ffffff;
 }
 
 /* Meny-knapp, öppnar menyn nav. */
@@ -162,11 +176,11 @@ nav a {
     align-items: center;
     background-color: #D6ECE8;
     cursor: pointer;
-    padding: 5px 5px;
+    padding: 10px 10px;
 }
 
 .open {
-    margin: 0 10% 0 0;
+    margin: 0 5% 0 0;
     border: none;
 }
 
@@ -199,7 +213,7 @@ nav a {
     margin-right: auto;
     margin-left: auto;
     margin-top: 1rem;
-    padding: 5px 5px;
+    padding: 10px 10px;
     border: none;
 }
 
@@ -278,6 +292,17 @@ nav a {
         font-weight: bold;
     }
 
+    nav a:hover {
+        background-color:#D6ECE8;
+        color: #395513;
+        text-decoration: none;
+    }
+
+    #nav-caret:hover {
+        background-color: #D6ECE8;
+        color: #395513;
+    }
+
     .login-button a {
         background-color: #ffffff;
         border: 1px solid #000000;
@@ -288,5 +313,109 @@ nav a {
         text-decoration: none;
         font-size: 24px;
         font-weight: bold;
+    }
+}
+
+.nuts-container {
+    position: relative;
+    background-image: url("../Assets/nuts.png");
+    background-repeat: no-repeat;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+}
+
+.login-form input {
+    width: 200px;
+    background-color: rgb(108, 108, 108, 0.25);
+    border: 1px solid rgb(0, 0, 0, 9.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#user {
+    padding: 0 5rem 0 0;
+    font-size: 20px;
+}
+
+#password {
+    padding: 0 7rem 0 0;
+    font-size: 20px;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+
+.login-button a {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0, 0.75);
+    padding: 10px 40px;
+    box-shadow: 3px 3px 5px #6c6c6c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-button a:hover, .reg-button a:hover {
+    background-color: #40403F;
+    color: #ffffff;
+}
+
+.info-registration {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    width: 300px;
+    height: 175px;
+    background-color: rgb(242, 169, 0, 0.35);
+    margin: 3rem auto 2rem auto;
+}
+
+.reg-button {
+    display: flex;
+    justify-content: center;
+}
+
+.reg-button a {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0, 0.75);
+    padding: 10px 19px;
+    box-shadow: 3px 3px 5px #6c6c6c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (min-width: 769px) {
+    .login-button a {
+        padding: 0 40px;
+    }
+
+    .info-registration {
+        height: 150px;
+    }
+
+    .reg-button a {
+        padding: 0 19px;
     }
 }
