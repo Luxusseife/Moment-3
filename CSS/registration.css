@@ -1,0 +1,408 @@
+/* MOMENT 3, PROJEKT I KURS DT200G, JELI2308. */
+
+
+/* GENERELLA REGLER. */
+
+/* Återställer default-värden. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: "Myriad-Pro", "Cambria", Arial, sans-serif;
+}
+
+/* Rubriker och brödtext. */
+h1 {
+    text-align: center;
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.75);
+    margin: 2rem 0 3rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    color:rgba(0, 0, 0, 0.75);
+    margin: 0.5rem 0 0 0;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color:rgba(0, 0, 0, 0.75);
+}
+
+p {
+    font-family: "Cambria", sans-serif;
+    line-height: 1.6;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.75);
+}
+
+/* Footer. */
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: 100px;
+    background-color: #8C857B;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    padding: 1rem 0 0;
+}
+
+/* Länkar i footer. */
+footer a {
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Hover-effekt på footer-länkar. */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Pil-element i footern. */
+footer .fa-solid {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* HEADER INKL. LOGOTYP och MOBIL-MENY. */
+
+/* Logotyp. */
+#logo {
+    padding: 0 0 0 40px;
+    max-width: 170px;
+    height: auto;
+}
+
+/* Header. */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D6ECE8;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+/* Utfälld meny som visas vid meny-klick. */
+nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background-color: #D6ECE8;
+    font-size: 1.4rem;
+    width: 300px;
+    height: 100vh;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+
+nav li:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #395513;
+}
+
+nav a {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0, 0.75);
+    padding: 20px 50px;
+    box-shadow: 3px 3px 5px #6c6c6c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #40403F;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Pil-element bredvid nav-länk. */
+nav .fa-solid, main .fa-solid {
+    color: rgb(0, 0, 0, 0.75);
+    margin: 15px;
+}
+
+#nav-caret:hover {
+    color: #ffffff;
+}
+
+/* Meny-knapp, öppnar menyn nav. */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    background-color: #D6ECE8;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.open {
+    margin: 0 5% 0 0;
+    border: none;
+}
+
+/*.menu-btn:hover {
+    background-color: rgb(140, 133, 123, 0.25);
+}*/
+
+.menu-icon {
+    margin-right: 5px;
+}
+
+/* Hamburger-ikon, tre svarta streck. */
+.bars {
+    display: block;
+    background-color: #395513;
+    width: 20px;
+    height: 3px;
+    margin: 5px 0;
+}
+
+/* Meny-text; MENY och STÄNG. */
+.menu-text {
+    color: #395513;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Meny-knapp, stänger den utfällda menyn. */
+.close {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    padding: 10px 10px;
+    border: none;
+}
+
+/* Stäng-ikon, två lodräta streck som roterar till ett kryss. */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+/* MOBIL-MENYN, ÄNDRAS TILL VANLIG NAV-MENY VID MINBREDD 769PX (STÖRRE SKÄRMAR). */
+@media (min-width: 769px) {
+
+    /* Logotyp. */
+    #logo {
+        padding: 0 0 0 50px;
+        max-width: 270px;
+        height: auto;
+    }
+
+    /* Header. */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #D6ECE8;
+        width: 100%;
+        height: 150px;
+        margin: 0;
+    }
+
+    /* Meny-knapp som ej syns. */
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    /* Ändring för vanlig nav-meny. */
+    nav {
+        display: block !important;
+        position: static;
+        height: auto;
+        font-size: 1.4rem;
+        width: auto;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav li {
+        display: inline;
+        padding: 1.2rem 0;
+    }
+
+    nav a {
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        color: #395513;
+        padding: 20px 50px;
+        box-shadow: none;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #395513;
+    }
+
+    nav a:hover {
+        background-color:#D6ECE8;
+        color: #395513;
+        text-decoration: none;
+    }
+
+    #nav-caret:hover {
+        background-color: #D6ECE8;
+        color: #395513;
+    }
+
+    .login-button a {
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        color: rgb(0, 0, 0, 0.75);
+        padding: 10px 40px;
+        box-shadow: 3px 3px 5px #6c6c6c;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.nuts-container {
+    position: relative;
+    background-image: url("../Assets/nuts.png");
+    background-repeat: no-repeat;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.reg-form {
+    text-align: center;
+}
+
+.reg-form label {
+    display: block;
+}
+
+.reg-form input {
+    width: 200px;
+    background-color: rgb(108, 108, 108, 0.25);
+    border: 1px solid rgb(0, 0, 0, 9.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#user-number {
+    padding: 0 4rem 0 0;
+    font-size: 20px;
+}
+
+.reg-button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+
+.reg-button a {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0, 0.75);
+    padding: 10px 40px;
+    box-shadow: 3px 3px 5px #6c6c6c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-button a:hover, .reg-button a:hover {
+    background-color: #40403F;
+    color: #ffffff;
+}
+
+.info-registration {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+    background-color: rgb(242, 169, 0, 0.35);
+    margin: 3rem auto 2rem auto;
+}
+
+.info-registration p {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem 0 0 0;
+    width: 80%;
+}
+
+@media (min-width: 769px) {
+    .reg-button a {
+        padding: 0 40px;
+    }
+
+    .info-registration {
+        height: 265px;
+    }
+}

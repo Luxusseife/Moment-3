@@ -351,12 +351,12 @@ nav .fa-solid, main .fa-solid {
     padding: 10px 10px;
 }
 
-#user {
+#user-number {
     padding: 0 5rem 0 0;
     font-size: 20px;
 }
 
-#password {
+#password-number {
     padding: 0 7rem 0 0;
     font-size: 20px;
 }
