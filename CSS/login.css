@@ -138,7 +138,7 @@ nav li {
 
 nav li:hover {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
     color: #395513;
 }
 
@@ -290,6 +290,12 @@ nav .fa-solid, main .fa-solid {
         text-decoration: none;
         font-size: 24px;
         font-weight: bold;
+    }
+
+    nav li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #395513;
     }
 
     nav a:hover {
