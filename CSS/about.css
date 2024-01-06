@@ -31,22 +31,21 @@ h1 {
 }
 
 h2 {
-    text-align: center;
     font-family: "Myriad-Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 26px;
     color:rgba(0, 0, 0, 0.75);
-    margin: 0.5rem 0 0 0;
+    margin: 3rem 0 0 2rem;
 }
 
 h3 {
-    text-align: center;
     font-family: "Myriad-Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
     color:rgba(0, 0, 0, 0.75);
+    margin: 3rem 0 0 2rem;
 }
 
 p {
@@ -54,6 +53,7 @@ p {
     line-height: 2;
     font-size: 20px;
     color:rgba(0, 0, 0, 0.75);
+    margin: 0 0 0 2rem;
 }
 
 /* MEDIA QUERIES FÖR RUBRIKER OCH BRÖDTEXT. */
@@ -72,13 +72,12 @@ p {
     }
 
     h2 {
-        text-align: center;
         font-family: "Myriad-Pro", sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 32px;
         color: rgba(0, 0, 0, 0.75);
-        margin: 0.5rem 0 2rem 0;
+        margin: 3rem 0 0 2rem;
     }
 
     h3 {
@@ -87,7 +86,7 @@ p {
         font-style: normal;
         font-size: 28px;
         color: rgba(0, 0, 0, 0.75);
-        margin: 0 0 0 2rem;
+        margin: 3rem 0 0 2rem;
     }
 
     main p {
@@ -174,9 +173,8 @@ nav ul {
 
 nav li {
     width: 100%;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
-
 
 nav li:hover {
     cursor: pointer;
@@ -276,6 +274,7 @@ main .fa-solid {
 }
 
 /* MOBIL-MENYN, ÄNDRAS TILL VANLIG NAV-MENY VID MINBREDD 769PX (STÖRRE SKÄRMAR). */
+
 @media (min-width: 769px) {
 
     /* Logotyp. */
@@ -328,7 +327,7 @@ main .fa-solid {
         border: none;
         border-radius: 5px;
         color: #395513;
-        padding: 20px 50px;
+        padding: 20px 0;
         box-shadow: none;
         text-decoration: none;
         font-size: 24px;
@@ -362,84 +361,36 @@ main .fa-solid {
     z-index: -1;
 }
 
-/* Formulär, inmatningsfält. */
-.reg-form {
-    text-align: center;
-}
-
-.reg-form label {
-    display: block;
-}
-
-.reg-form input {
-    width: 200px;
-    background-color: rgb(108, 108, 108, 0.25);
-    border: 1px solid rgb(0, 0, 0, 9.75);
-    border-radius: 5px;
-    padding: 10px 10px;
-}
-
-#user-number {
-    padding: 0 4rem 0 0;
-    font-size: 20px;
-}
-
-/* Knapp, registrera. */
-.reg-button {
+/* Information, container. */
+.info-container {
     display: flex;
     justify-content: center;
-    margin: 2rem 0 0 0;
 }
 
-.reg-button a {
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    color: rgb(0, 0, 0, 0.75);
-    padding: 10px 40px;
-    box-shadow: 3px 3px 5px #6c6c6c;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+/* Information, text och lista. */
+.info {
+    text-align: left;
+    margin: 0 0 3rem 0;
 }
 
-.reg-button a:hover {
-    background-color: #40403F;
-    color: #ffffff;
+.info p {
+    max-width: 70ch;
 }
 
-/* Informationsfält. */
-.info-registration {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(0, 0, 0, 0.75);
-    border-radius: 5px;
-    width: 300px;
-    height: 275px;
-    background-color: rgb(242, 169, 0, 0.35);
-    margin: 3rem auto 2rem auto;
-}
-
-.info-registration p {
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2rem 0 0 0;
-    width: 80%;
+.info ul {
+    font-family: "Cambria", sans-serif;
+    line-height: 2;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.75);
+    margin: 0 0 0 2rem;
+    max-width: 70ch;
+    padding: 0 0 0 2.5rem;
 }
 
 /* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 769PX. */
 
 @media (min-width: 769px) {
-    .reg-button a {
-        padding: 0 40px;
-    }
-
-    .info-registration {
-        width: 450px;
-        height: 275px;
-    }
-
-    .info-registration p {
-        padding: 1rem 0 0 0;
+    .info ul {
+        font-size: 24px;
     }
 }

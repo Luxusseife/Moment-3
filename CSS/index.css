@@ -51,9 +51,51 @@ h3 {
 
 p {
     font-family: "Cambria", sans-serif;
-    line-height: 1.6;
+    line-height: 2;
     font-size: 20px;
     color:rgba(0, 0, 0, 0.75);
+}
+
+/* MEDIA QUERIES FÖR RUBRIKER OCH BRÖDTEXT. */
+
+@media (min-width: 769px) {
+
+    /* Rubriker och brödtext. */
+    h1 {
+        text-align: center;
+        font-family: "Myriad-Pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.75);
+        margin: 2rem 0 3rem 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: "Myriad-Pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.75);
+        margin: 0.5rem 0 2rem 0;
+    }
+
+    h3 {
+        font-family: "Myriad-Pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 28px;
+        color: rgba(0, 0, 0, 0.75);
+        margin: 0 0 0 2rem;
+    }
+
+    main p {
+        font-family: "Cambria", sans-serif;
+        line-height: 2;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.75);
+    }
 }
 
 /* Footer. */
@@ -65,7 +107,7 @@ footer {
     color: white;
     text-align: center;
     line-height: 1.6;
-    padding: 1rem 0 0;
+    padding: 0.75rem 0 0;
 }
 
 /* Länkar i footer. */
@@ -306,6 +348,7 @@ main .fa-solid {
     }
 }
 
+/* Bakgrundsbild, container. */
 .nuts-container {
     position: relative;
     background-image: url("../Assets/nuts.png");
@@ -319,12 +362,14 @@ main .fa-solid {
     z-index: -1;
 }
 
+/* Knappar, container. */
 .button-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
+/* Knappar. */
 .booking-button, .my-trips-button, .profile-button {
     display: flex;
     justify-content: center;
@@ -348,13 +393,14 @@ main .fa-solid {
     color: #ffffff;
 }
 
+/* Informationsfält med text och lista. */
 .info-choices {
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(0, 0, 0, 0.75);
     border-radius: 5px;
     width: 300px;
-    height: 750px;
+    height: 825px;
     background-color: rgb(242, 169, 0, 0.35);
     margin: 7rem auto 2rem auto;
 }
@@ -367,11 +413,13 @@ main .fa-solid {
 
 .info-choices ul {
     font-family: "Cambria", sans-serif;
-    line-height: 1.6;
+    line-height: 2;
     font-size: 20px;
     color:rgba(0, 0, 0, 0.75);
     padding: 0 0 0 2.5rem;
 }
+
+/* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 769PX. */
 
 @media (min-width: 769px) {
 
@@ -386,12 +434,17 @@ main .fa-solid {
 
     .info-choices {
         width: 800px;
-        height: 525px;
+        height: 625px;
     }
 
     .info-choices p {
         margin-right: auto;
         margin-left: auto;
+        font-size: 24px;
         max-width: 70ch;
+    }
+
+    .info-choices ul {
+        font-size: 24px;
     }
 }
