@@ -106,7 +106,7 @@ footer {
     color: white;
     text-align: center;
     line-height: 1.6;
-    padding: 0.75rem 0 0;
+    padding: 0.25rem 0 0;
 }
 
 /* Länkar i footer. */
@@ -116,6 +116,7 @@ footer a {
     font-style: normal;
     color: #ffffff;
     text-decoration: none;
+    font-size: 24px;
 }
 
 /* Hover-effekt på footer-länkar. */
