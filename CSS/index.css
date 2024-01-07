@@ -368,6 +368,7 @@ main .fa-solid {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin: -1rem 0 0 0;
 }
 
 /* Knappar. */
@@ -403,7 +404,7 @@ main .fa-solid {
     width: 300px;
     height: 825px;
     background-color: rgb(242, 169, 0, 0.35);
-    margin: 7rem auto 2rem auto;
+    margin: 5rem auto 2rem auto;
 }
 
 .info-choices p, .info-choices ul {
