@@ -383,30 +383,214 @@ main .fa-solid {
     z-index: -1;
 }
 
-/* Informationsfält med text. */
-.confirmation-booking {
+/* Olika bokningsfält. */
+.adress, .date, .time, .occurence, .return, .save-trip {
     display: flex;
     flex-direction: column;
     width: 300px;
     margin: 2rem auto 2rem auto;
 }
 
+form {
+    margin: 0 0 1rem 0;
+}
+
 .heading {
-    background-color: rgb(154, 136, 91, 0.5);
+    background-color: rgb(73, 108, 24, 0.5);
     border: 1px solid rgb(0, 0, 0, 0.75);
     border-radius: 5px;
     box-shadow: 0 3px 3px 0 #6c6c6c;
 }
 
-.booking {
+.book-adress, .book-date, .book-time, .book-occurence, .book-return, .book-save {
     display: flex;
     flex-direction: column;
     background-color: #E4EEE4;
     border: 1px solid rgb(0, 0, 0, 0.75);
     border-radius: 5px;
     margin-top: -10px;
-    padding: 0 0 1rem 0;
     box-shadow: 0 3px 3px 0 #6c6c6c;
+}
+
+/* Formulär, inmatningsfält för adress. */
+.book-adress {
+    text-align: center;
+}
+
+.book-adress label {
+    display: block;
+}
+
+.book-adress input {
+    width: 250px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#pickup-adress {
+    padding: 0.5rem 13.5rem 0 0;
+    font-size: 20px;
+}
+
+#destination {
+    padding: 0 12.5rem 0 0;
+    font-size: 20px;
+}
+
+/* Formulär, inmatningsfält för datum och radioknapp. */
+.book-date {
+    text-align: center;
+}
+
+.book-date label {
+    display: block;
+}
+
+.book-date input {
+    width: 250px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#pickup-date {
+    padding: 0.5rem 11rem 0 0;
+    font-size: 20px;
+}
+
+#return-yes {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#return {
+    position: relative;
+    top: 2.3rem;
+    left: 1rem;
+    font-size: 20px;
+}
+
+/* Formulär, inmatningsfält för tid och radioknapp. */
+.book-time {
+    text-align: center;
+}
+
+.book-time label {
+    display: block;
+}
+
+.book-time input {
+    width: 250px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#asap-yes {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#asap {
+    position: relative;
+    top: 2.3rem;
+    left: 1.5rem;
+    font-size: 20px;
+}
+
+#pickup-time {
+    padding: 0.5rem 10rem 0 0.8rem;
+    font-size: 20px;
+}
+
+/* Formulär, radio-knappar för återkommande resor. */
+.book-occurence {
+    text-align: center;
+}
+
+.book-occurence label {
+    display: block;
+}
+
+.book-occurence input {
+    height: 35px;
+}
+
+#one-time, #weekdays, #each-week, #each-month {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#once, #weekday, #weekly, #monthly {
+    position: relative;
+    top: 1.8rem;
+    left: 1rem;
+    font-size: 20px;
+}
+
+/* Formulär, radio-knappar för tur & retur. */
+.book-return {
+    text-align: center;
+}
+
+.book-return label {
+    display: block;
+}
+
+.book-return input {
+    height: 35px;
+}
+
+#return-yes, #return-no {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#return1, #return2 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 20px;
+}
+
+/* Formulär, radio-knappar för spara resa. */
+.book-save {
+    text-align: center;
+}
+
+.book-save label {
+    display: block;
+}
+
+.book-save input {
+    height: 35px;
+}
+
+#save-yes, #save-no {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#save1, #save2 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 20px;
 }
 
 /* Knappar, container. */
@@ -414,17 +598,17 @@ main .fa-solid {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 0 0 3rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 /* Knappar. */
-.my-trips-button, .change-button, .cancel-button {
+.update-button, .cancel-button {
     display: flex;
     justify-content: center;
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 1rem 0;
 }
 
-.my-trips-button a, .change-button a, .cancel-button a {
+.update-button a, .cancel-button a {
     background-color: #ffffff;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -436,7 +620,7 @@ main .fa-solid {
     font-weight: bold;
 }
 
-.my-trips-button a:hover, .change-button a:hover, .cancel-button a:hover {
+.update-button a:hover, .cancel-button a:hover {
     background-color: #40403F;
     color: #ffffff;
 }
@@ -445,20 +629,69 @@ main .fa-solid {
 
 @media (min-width: 769px) {
 
-    .button-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .my-trips-button a, .change-button a, .cancel-button a {
+    .update-button a, .cancel-button a {
         padding: 0 30px;
     }
 
-    .confirmation-booking {
-        width: 750px;
+    .adress, .date, .time, .occurence, .return, .save-trip {
+        width: 400px;
     }
 
-    .confirmation-booking p {
-        max-width: 70ch;
+    #pickup-adress, #destination, #pickup-date, #return, #pickup-time, #asap, #once, #weekday, #weekly, #monthly, #save1, #save2, form input {
+        font-size: 24px;
+    }
+}
+
+/* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 1440PX. */
+
+@media (min-width: 1440px) {
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .booking-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .book-adress, .book-occurence, .book-time, .book-date, .book-save {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 275px;
+    }
+
+    .adress, .occurence {
+        width: 75%;
+        max-width: 600px;
+    }
+    
+    .date, .save-trip {
+        width: 75%;
+        max-width: 600px;
+    }
+
+    .time {
+        width: 75%;
+        max-width: 600px;
+    }
+
+    .adress {
+        grid-column-start: 1;
+    }
+
+    .date {
+        grid-column-start: 2;
+    }
+
+    .time {
+        grid-column-start: 3;
+    }
+
+    .occurence {
+        grid-column-start: 1;
     }
 }
