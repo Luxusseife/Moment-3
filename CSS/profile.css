@@ -508,7 +508,7 @@ form input {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
-        width: 50%;
+        width: 60%;
     }
 
     .information,

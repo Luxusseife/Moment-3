@@ -31,16 +31,13 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     font-family: "Myriad-Pro", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 26px;
     color: rgba(0, 0, 0, 0.75);
-    margin: 3rem 0 0 1rem;
-}
-
-#h2-info {
-    margin-top: 0;
+    margin: 0.5rem 0 2rem 0;
 }
 
 h3 {
@@ -49,15 +46,28 @@ h3 {
     font-style: normal;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.75);
-    margin: 3rem 0 0 1rem;
+    margin: 0 0 0 2rem;
 }
 
-p {
-    font-family: "Cambria", sans-serif;
-    line-height: 2;
+h4 {
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.75);
-    margin: 0 1rem 0 1rem;
+    margin: 2rem 0 -1rem 1rem;
+}
+
+#h4-name {
+    margin-top: 0;
+}
+
+main p {
+    font-family: "Cambria", sans-serif;
+    line-height: 1;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.75);
+    margin: 0 0 0 1rem;
 }
 
 /* MEDIA QUERIES FÖR RUBRIKER OCH BRÖDTEXT. */
@@ -76,16 +86,13 @@ p {
     }
 
     h2 {
+        text-align: center;
         font-family: "Myriad-Pro", sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 32px;
         color: rgba(0, 0, 0, 0.75);
-        margin: 3rem 0 0 1rem;
-    }
-
-    #h2-info {
-        margin-top: 3rem;
+        margin: 0.5rem 0 2rem 0;
     }
 
     h3 {
@@ -94,15 +101,41 @@ p {
         font-style: normal;
         font-size: 28px;
         color: rgba(0, 0, 0, 0.75);
-        margin: 3rem 0 0 1rem;
+        margin: 0 0 0 2rem;
+    }
+
+    h4 {
+        font-family: "Myriad-Pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 24px;
+        color: rgba(0, 0, 0, 0.75);
+        margin: 2rem 0 -1rem 1rem;
+    }
+
+    #h4-name {
+        margin-top: 2rem;
     }
 
     main p {
         font-family: "Cambria", sans-serif;
-        line-height: 2;
+        line-height: 1;
         font-size: 24px;
         color: rgba(0, 0, 0, 0.75);
+        margin: 0 0 0 1rem;
     }
+}
+
+/* Footer. */
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: 100px;
+    background-color: #8C857B;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0.25rem 0 0;
 }
 
 
@@ -152,6 +185,7 @@ nav li {
     width: 100%;
     padding: 2rem 0;
 }
+
 
 nav li:hover {
     cursor: pointer;
@@ -251,7 +285,6 @@ main .fa-solid {
 }
 
 /* MOBIL-MENYN, ÄNDRAS TILL VANLIG NAV-MENY VID MINBREDD 769PX (STÖRRE SKÄRMAR). */
-
 @media (min-width: 769px) {
 
     /* Logotyp. */
@@ -324,10 +357,6 @@ main .fa-solid {
     }
 }
 
-
-
-/* MAIN. */
-
 /* Bakgrundsbild, container. */
 .nuts-container {
     position: relative;
@@ -342,37 +371,193 @@ main .fa-solid {
     z-index: -1;
 }
 
-/* Information, container. */
-.info-container {
+/* Information med text. */
+.profile {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    margin: 2rem auto 2rem auto;
 }
 
-/* Information, text och lista. */
-.info {
-    text-align: left;
-    margin: 0 0 3rem 0;
+.information {
+    display: flex;
+    flex-direction: column;
 }
 
-.info p {
-    max-width: 70ch;
+/* Formulär för radioknappar. */
+form label {
+    display: block;
 }
 
-.info ul {
+form input {
+    height: 35px;
+}
+
+#book,
+#cancel,
+#pickup {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: -1rem;
+}
+
+#booking,
+#cancelling,
+#pickup-notice {
+    position: relative;
+    top: 2.3rem;
+    left: 4rem;
     font-family: "Cambria", sans-serif;
-    line-height: 2;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.75);
-    margin: 0 0 0 2rem;
-    max-width: 70ch;
-    padding: 0 0 0 2.5rem;
+}
+
+/* Informationsfält med text. */
+.info-notice {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    width: 300px;
+    height: 175px;
+    background-color: rgb(242, 169, 0, 0.35);
+    margin: 3rem 0 0 0;
+}
+
+.info-notice p {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+}
+
+/* Knappar, container. */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem 0 3rem 0;
+}
+
+/* Knappar. */
+.save-button,
+.index-button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+
+.save-button a,
+.index-button a {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0, 0.75);
+    padding: 10px 40px;
+    box-shadow: 3px 3px 5px #6c6c6c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.save-button a:hover,
+.index-button a:hover {
+    background-color: #40403F;
+    color: #ffffff;
+}
+
+/* Inmatningsfält för att ändra uppgifter. */
+#adress, #phone, #needs {
+    margin: 0 0 0 1.2rem;
+}
+
+form input {
+    font-family: "Cambria", sans-serif;
+    width: 250px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 10px 10px;
 }
 
 /* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 769PX. */
 
 @media (min-width: 769px) {
-    .info ul {
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .save-button a,
+    .index-button a {
+        padding: 0 30px;
+    }
+
+    .profile {
+        width: 500px;
+    }
+
+    .profile p {
+        max-width: 70ch;
+    }
+
+    #booking,
+    #cancelling,
+    #pickup-notice {
         font-size: 24px;
+    }
+
+    .info-notice {
+        width: 400px;
+        height: 200px;
+    }
+
+    form input {
+        font-size: 24px;
+        font-family: "Cambria", sans-serif;
+    }
+}
+
+/* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 1440PX. */
+
+@media (min-width: 1440px) {
+
+    .profile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        width: 60%;
+    }
+
+    .information,
+    #notices,
+    .info-notice {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    #notice-choices {
+        grid-column-start: 2;
+    }
+
+    #h4-notices {
+        margin-top: -1.5rem;
+    }
+
+    .info-notice {
+        grid-column-start: 2;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
     }
 }
 

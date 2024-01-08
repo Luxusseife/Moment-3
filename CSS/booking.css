@@ -421,6 +421,10 @@ form {
     font-size: 20px;
 }
 
+#adress1, #adress2 {
+    font-family: "Cambria", sans-serif;
+}
+
 /* Formulär, inmatningsfält för datum och radioknapp. */
 .book-date {
     text-align: center;
@@ -442,6 +446,10 @@ form {
 #pickup-date {
     padding: 0.5rem 11rem 0 0;
     font-size: 20px;
+}
+
+#date {
+    font-family: "Cambria", sans-serif;
 }
 
 #return-yes {
@@ -495,11 +503,11 @@ form {
     font-size: 20px;
 }
 
-/* Formulär, radio-knappar för återkommande resor. */
-.book-occurence {
-    text-align: center;
+#time {
+    font-family: "Cambria", sans-serif;
 }
 
+/* Formulär, radio-knappar för återkommande resor. */
 .book-occurence label {
     display: block;
 }
@@ -515,7 +523,7 @@ form {
     padding: 2rem;
     width: 35px;
     position: relative;
-    right: 5rem;
+    right: -3rem;
 }
 
 #once,
@@ -524,7 +532,7 @@ form {
 #monthly {
     position: relative;
     top: 1.8rem;
-    left: 1rem;
+    left: 7rem;
     font-size: 20px;
 }
 
@@ -557,10 +565,6 @@ form {
 }
 
 /* Formulär, radio-knappar för spara resa. */
-.book-save {
-    text-align: center;
-}
-
 .book-save label {
     display: block;
 }
@@ -574,7 +578,7 @@ form {
     padding: 2rem;
     width: 35px;
     position: relative;
-    right: 5rem;
+    right: -3rem;
 }
 
 #save1,
@@ -582,6 +586,23 @@ form {
     position: relative;
     top: 1.8rem;
     font-size: 20px;
+    left: 7rem;
+}
+
+#pickup-adress,
+#destination,
+#pickup-date,
+#return,
+#pickup-time,
+#asap,
+#once,
+#weekday,
+#weekly,
+#monthly,
+#save1,
+#save2,
+form input {
+    color:rgba(0, 0, 0, 0.75);
 }
 
 /* Knappar, container. */

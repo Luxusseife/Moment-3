@@ -39,6 +39,10 @@ h2 {
     margin: 3rem 0 0 2rem;
 }
 
+#h2-info {
+    margin-top: 0;
+}
+
 h3 {
     font-family: "Myriad-Pro", sans-serif;
     font-weight: 700;
@@ -78,6 +82,10 @@ main p {
         font-size: 32px;
         color: rgba(0, 0, 0, 0.75);
         margin: 3rem 0 0 2rem;
+    }
+
+    #h2-info {
+        margin-top: 3rem;
     }
 
     h3 {
