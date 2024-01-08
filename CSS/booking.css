@@ -1,0 +1,697 @@
+/* MOMENT 3, PROJEKT I KURS DT200G, JELI2308. */
+
+
+/* GENERELLA REGLER. */
+
+/* Återställer default-värden. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: "Myriad-Pro", "Cambria", Arial, sans-serif;
+}
+
+/* Rubriker och brödtext. */
+h1 {
+    text-align: center;
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.75);
+    margin: 2rem 0 3rem 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    color:rgba(0, 0, 0, 0.75);
+    margin: 0.5rem 0 2rem 0;
+}
+
+h3 {
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    color:rgba(0, 0, 0, 0.75);
+    margin: 0 0 0 2rem;
+}
+
+h4 {
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.75);
+    margin: 2rem 0 -1rem 1rem;
+}
+
+main p {
+    font-family: "Cambria", sans-serif;
+    line-height: 1;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.75);
+    margin: 0 0 0 1rem;
+}
+
+/* MEDIA QUERIES FÖR RUBRIKER OCH BRÖDTEXT. */
+
+@media (min-width: 769px) {
+
+    /* Rubriker och brödtext. */
+    h1 {
+        text-align: center;
+        font-family: "Myriad-Pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 40px;
+        color: rgba(0, 0, 0, 0.75);
+        margin: 2rem 0 3rem 0;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: "Myriad-Pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.75);
+        margin: 0.5rem 0 2rem 0;
+    }
+
+    h3 {
+        font-family: "Myriad-Pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 28px;
+        color: rgba(0, 0, 0, 0.75);
+        margin: 0 0 0 2rem;
+    }
+
+    h4 {
+        font-family: "Myriad-Pro", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 24px;
+        color:rgba(0, 0, 0, 0.75);
+        margin: 2rem 0 -1rem 1rem;
+    }
+    
+    main p {
+        font-family: "Cambria", sans-serif;
+        line-height: 1;
+        font-size: 24px;
+        color:rgba(0, 0, 0, 0.75);
+        margin: 0 0 0 1rem;
+    }
+}
+
+/* Footer. */
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: 100px;
+    background-color: #8C857B;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0.25rem 0 0;
+}
+
+/* Länkar i footer. */
+footer a {
+    font-family: "Myriad-Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Hover-effekt på footer-länkar. */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Pil-element i footern. */
+footer .fa-solid {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* HEADER INKL. LOGOTYP och MOBIL-MENY. */
+
+/* Logotyp. */
+#logo {
+    padding: 0 0 0 40px;
+    max-width: 170px;
+    height: auto;
+}
+
+/* Header. */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D6ECE8;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+/* Utfälld meny som visas vid meny-klick. */
+nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    background-color: #D6ECE8;
+    font-size: 1.4rem;
+    width: 300px;
+    height: 100vh;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+
+nav li:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #395513;
+}
+
+nav a {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0, 0.75);
+    padding: 20px 50px;
+    box-shadow: 3px 3px 5px #6c6c6c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #40403F;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Pil-element bredvid nav-länk. */
+nav .fa-solid  {
+    color: rgb(0, 0, 0, 0.75);
+    margin: 5px;
+}
+
+main .fa-solid {
+    color: rgb(0, 0, 0, 0.75);
+    margin: 15px;
+}
+
+/* Meny-knapp, öppnar menyn nav. */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    background-color: #D6ECE8;
+    cursor: pointer;
+    padding: 10px 10px;
+}
+
+.open {
+    margin: 0 5% 0 0;
+    border: none;
+}
+
+/*.menu-btn:hover {
+    background-color: rgb(140, 133, 123, 0.25);
+}*/
+
+.menu-icon {
+    margin-right: 5px;
+}
+
+/* Hamburger-ikon, tre svarta streck. */
+.bars {
+    display: block;
+    background-color: #395513;
+    width: 20px;
+    height: 3px;
+    margin: 5px 0;
+}
+
+/* Meny-text; MENY och STÄNG. */
+.menu-text {
+    color: #395513;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Meny-knapp, stänger den utfällda menyn. */
+.close {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    padding: 10px 10px;
+    border: none;
+}
+
+/* Stäng-ikon, två lodräta streck som roterar till ett kryss. */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+/* MOBIL-MENYN, ÄNDRAS TILL VANLIG NAV-MENY VID MINBREDD 769PX (STÖRRE SKÄRMAR). */
+@media (min-width: 769px) {
+
+    /* Logotyp. */
+    #logo {
+        padding: 0 0 0 50px;
+        max-width: 270px;
+        height: auto;
+    }
+
+    /* Header. */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #D6ECE8;
+        width: 100%;
+        height: 150px;
+        margin: 0;
+    }
+
+    /* Meny-knapp som ej syns. */
+    .menu-btn {
+        display: none;
+    }
+
+    #open-menu {
+        display: none !important;
+    }
+
+    /* Ändring för vanlig nav-meny. */
+    nav {
+        display: block !important;
+        position: static;
+        height: auto;
+        font-size: 1.4rem;
+        width: auto;
+    }
+
+    nav ul {
+        height: 100%;
+    }
+
+    nav li {
+        display: inline;
+        padding: 1.2rem 0;
+    }
+
+    nav a {
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        color: #395513;
+        padding: 20px 0;
+        box-shadow: none;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    nav li:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: #395513;
+    }
+
+    nav a:hover {
+        background-color:#D6ECE8;
+        color: #395513;
+        text-decoration: none;
+    }
+}
+
+/* Bakgrundsbild, container. */
+.nuts-container {
+    position: relative;
+    background-image: url("../Assets/nuts.png");
+    background-repeat: no-repeat;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+/* Olika bokningsfält. */
+.adress, .date, .time, .occurence, .return, .save-trip {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 2rem auto 2rem auto;
+}
+
+form {
+    margin: 0 0 1rem 0;
+}
+
+.heading {
+    background-color: rgb(73, 108, 24, 0.5);
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    box-shadow: 0 3px 3px 0 #6c6c6c;
+}
+
+.book-adress, .book-date, .book-time, .book-occurence, .book-return, .book-save {
+    display: flex;
+    flex-direction: column;
+    background-color: #E4EEE4;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    margin-top: -10px;
+    box-shadow: 0 3px 3px 0 #6c6c6c;
+}
+
+/* Formulär, inmatningsfält för adress. */
+.book-adress {
+    text-align: center;
+}
+
+.book-adress label {
+    display: block;
+}
+
+.book-adress input {
+    width: 250px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#pickup-adress {
+    padding: 0.5rem 13.5rem 0 0;
+    font-size: 20px;
+}
+
+#destination {
+    padding: 0 12.5rem 0 0;
+    font-size: 20px;
+}
+
+/* Formulär, inmatningsfält för datum och radioknapp. */
+.book-date {
+    text-align: center;
+}
+
+.book-date label {
+    display: block;
+}
+
+.book-date input {
+    width: 250px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#pickup-date {
+    padding: 0.5rem 11rem 0 0;
+    font-size: 20px;
+}
+
+#return-yes {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#return {
+    position: relative;
+    top: 2.3rem;
+    left: 1rem;
+    font-size: 20px;
+}
+
+/* Formulär, inmatningsfält för tid och radioknapp. */
+.book-time {
+    text-align: center;
+}
+
+.book-time label {
+    display: block;
+}
+
+.book-time input {
+    width: 250px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#asap-yes {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#asap {
+    position: relative;
+    top: 2.3rem;
+    left: 1.5rem;
+    font-size: 20px;
+}
+
+#pickup-time {
+    padding: 0.5rem 10rem 0 0.8rem;
+    font-size: 20px;
+}
+
+/* Formulär, radio-knappar för återkommande resor. */
+.book-occurence {
+    text-align: center;
+}
+
+.book-occurence label {
+    display: block;
+}
+
+.book-occurence input {
+    height: 35px;
+}
+
+#one-time, #weekdays, #each-week, #each-month {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#once, #weekday, #weekly, #monthly {
+    position: relative;
+    top: 1.8rem;
+    left: 1rem;
+    font-size: 20px;
+}
+
+/* Formulär, radio-knappar för tur & retur. */
+.book-return {
+    text-align: center;
+}
+
+.book-return label {
+    display: block;
+}
+
+.book-return input {
+    height: 35px;
+}
+
+#return-yes, #return-no {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#return1, #return2 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 20px;
+}
+
+/* Formulär, radio-knappar för spara resa. */
+.book-save {
+    text-align: center;
+}
+
+.book-save label {
+    display: block;
+}
+
+.book-save input {
+    height: 35px;
+}
+
+#save-yes, #save-no {
+    padding: 2rem;
+    width: 35px;
+    position: relative;
+    right: 5rem;
+}
+
+#save1, #save2 {
+    position: relative;
+    top: 1.8rem;
+    font-size: 20px;
+}
+
+/* Knappar, container. */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem 0 1rem 0;
+}
+
+/* Knappar. */
+.booking-button, .cancel-button {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.booking-button a, .cancel-button a {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: rgb(0, 0, 0, 0.75);
+    padding: 10px 40px;
+    box-shadow: 3px 3px 5px #6c6c6c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.booking-button a:hover, .cancel-button a:hover {
+    background-color: #40403F;
+    color: #ffffff;
+}
+
+/* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 769PX. */
+
+@media (min-width: 769px) {
+
+    .booking-button a, .cancel-button a {
+        padding: 0 30px;
+    }
+
+    .adress, .date, .time, .occurence, .return, .save-trip {
+        width: 400px;
+    }
+
+    #pickup-adress, #destination, #pickup-date, #return, #pickup-time, #asap, #once, #weekday, #weekly, #monthly, #save1, #save2, form input {
+        font-size: 24px;
+    }
+}
+
+/* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 1440PX. */
+
+@media (min-width: 1440px) {
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .booking-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .book-adress, .book-occurence, .book-time, .book-date, .book-save {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 275px;
+    }
+
+    .adress, .occurence {
+        width: 75%;
+        max-width: 600px;
+    }
+    
+    .date, .save-trip {
+        width: 75%;
+        max-width: 600px;
+    }
+
+    .time {
+        width: 75%;
+        max-width: 600px;
+    }
+
+    .adress {
+        grid-column-start: 1;
+    }
+
+    .date {
+        grid-column-start: 2;
+    }
+
+    .time {
+        grid-column-start: 3;
+    }
+
+    .occurence {
+        grid-column-start: 1;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hässleholms Färdtjänst - Boka resa</title>
+
+    <link rel="icon" href="Assets/favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/ogy3xgi.css">
+    <link rel="stylesheet" href="CSS/booking.css" type="text/css">
+    <script src="https://kit.fontawesome.com/e49202e377.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="./index.html"><img id="logo" src="Assets/logo.png" alt="Logotyp"></a>
+
+        <!-- Menyknapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">MENY</span>
+        </button>
+        
+        <!-- Navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">STÄNG</span>
+            </button>
+            <ul>
+                <li><a href="./index.html">Startsida<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./my-trips.html">Mina resor<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./profile.html">Profil<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./logout.html">Logga ut<i class="fa-solid fa-caret-right"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="nuts-container">
+            
+            <h1>Boka resa</h1>
+            <div class="booking-container">
+                <div class="adress">
+                    <div class="heading">
+                        <h2>Vart vill du resa?</h2>
+                    </div>
+    
+                    <div class="book-adress">
+                        <form>
+                            <label id="pickup-adress" for="adress1">Till:</label>
+                            <input type="text" id="adress1" placeholder="Upphämtningsadress">
+                            <br>
+                            <br>
+                            <label id="destination" for="adress2">Från:</label>
+                            <input type="text" id="adress2" placeholder="Destinationsadress">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <div class="heading">
+                        <h2>Vilken dag vill du resa?</h2>
+                    </div>
+    
+                    <div class="book-date">
+                        <form>
+                            <label id="pickup-date" for="date">Datum:</label>
+                            <input type="date" id="date" placeholder="Datum">
+
+                            <label id="return" for="return-yes">Tur och retur</label>
+                            <input type="radio" id="return-yes" name="return" value="yes">
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="time">
+                    <div class="heading">
+                        <h2>Vilken tid vill du resa?</h2>
+                    </div>
+    
+                    <div class="book-time">
+                        <form>
+                            <label id="pickup-time" for="time">Klockslag:</label>
+                            <input type="time" id="time" placeholder="Klockslag">
+
+                            <label id="asap" for="asap-yes">Snarast möjligt</label>
+                            <input type="radio" id="asap-yes" name="asap" value="asap-yes">
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="occurence">
+                    <div class="heading">
+                        <h2>Hur ofta vill du resa?</h2>
+                    </div>
+    
+                    <div class="book-occurence">
+                        <form>
+                            <label id="once" for="one-time">En gång</label>
+                            <input type="radio" id="one-time" name="occurence" value="once">
+                            <br>
+                            <label id="weekday" for="weekdays">Varje vardag</label>
+                            <input type="radio" id="weekdays" name="occurence" value="weekday">
+                            <br>
+                            <label id="weekly" for="each-week">Varje vecka</label>
+                            <input type="radio" id="each-week" name="occurence" value="weekly">
+                            <br>
+                            <label id="monthly" for="each-month">Varje månad</label>
+                            <input type="radio" id="each-month" name="occurence" value="monthly">
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="save-trip">
+                    <div class="heading">
+                        <h2>Vill du spara resan?</h2>
+                    </div>
+    
+                    <div class="book-save">
+                        <form>
+                            <label id="save1" for="save-yes">Ja</label>
+                            <input type="radio" id="save-yes" name="save" value="yes">
+                            <br>
+                            <label id="save2" for="save-no">Nej</label>
+                            <input type="radio" id="save-no" name="save" value="no">
+                        </form>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <span class="booking-button">
+                        <a href="./confirmation-book.html">Boka<i class="fa-solid fa-caret-right"></i></a>
+                    </span>
+        
+                    <span class="cancel-button">
+                        <a href="./index.html">Avbryt<i class="fa-solid fa-xmark"></i></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="./about.html">Om Hässleholms Färdtjänst<i class="fa-solid fa-caret-right"></i></a>
+            <br>
+            <a href="./accessibility.html">Tillgänglighetsredogörelse<i class="fa-solid fa-caret-right"></i></a>
+        </p>
+    </footer>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
