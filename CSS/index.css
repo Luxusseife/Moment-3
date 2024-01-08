@@ -26,7 +26,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 2rem 0 3rem 0;
 }
 
@@ -36,7 +36,7 @@ h2 {
     font-weight: 700;
     font-style: normal;
     font-size: 26px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 0.5rem 0 2rem 0;
 }
 
@@ -45,7 +45,7 @@ h3 {
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 0 0 0 2rem;
 }
 
@@ -54,7 +54,7 @@ h4 {
     font-weight: 700;
     font-style: normal;
     font-size: 20px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 1rem 0 1rem 1rem;
 }
 
@@ -62,7 +62,7 @@ main p {
     font-family: "Cambria", sans-serif;
     line-height: 2;
     font-size: 20px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 /* MEDIA QUERIES FÖR RUBRIKER OCH BRÖDTEXT. */
@@ -104,7 +104,7 @@ main p {
         font-weight: 700;
         font-style: normal;
         font-size: 24px;
-        color:rgba(0, 0, 0, 0.75);
+        color: rgba(0, 0, 0, 0.75);
         margin: 1rem 0 1rem 1rem;
     }
 
@@ -222,7 +222,7 @@ nav a:hover {
 }
 
 /* Pil-element bredvid nav-länk. */
-nav .fa-solid  {
+nav .fa-solid {
     color: rgb(0, 0, 0, 0.75);
     margin: 5px;
 }
@@ -361,7 +361,7 @@ main .fa-solid {
     }
 
     nav a:hover {
-        background-color:#D6ECE8;
+        background-color: #D6ECE8;
         color: #395513;
         text-decoration: none;
     }
@@ -390,13 +390,17 @@ main .fa-solid {
 }
 
 /* Knappar. */
-.booking-button, .my-trips-button, .profile-button {
+.booking-button,
+.my-trips-button,
+.profile-button {
     display: flex;
     justify-content: center;
     margin: 2rem 0 0 0;
 }
 
-.booking-button a, .my-trips-button a, .profile-button a {
+.booking-button a,
+.my-trips-button a,
+.profile-button a {
     background-color: #ffffff;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -408,7 +412,9 @@ main .fa-solid {
     font-weight: bold;
 }
 
-.booking-button a:hover, .my-trips-button a:hover, .profile-button a:hover {
+.booking-button a:hover,
+.my-trips-button a:hover,
+.profile-button a:hover {
     background-color: #40403F;
     color: #ffffff;
 }
@@ -425,7 +431,8 @@ main .fa-solid {
     margin: 5rem auto 2rem auto;
 }
 
-.info-choices p, .info-choices ul {
+.info-choices p,
+.info-choices ul {
     margin-right: auto;
     margin-left: auto;
     width: 90%;
@@ -435,7 +442,7 @@ main .fa-solid {
     font-family: "Cambria", sans-serif;
     line-height: 2;
     font-size: 20px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     padding: 0 0 0 2.5rem;
 }
 
@@ -448,7 +455,9 @@ main .fa-solid {
         flex-direction: row;
     }
 
-    .booking-button a, .my-trips-button a, .profile-button a {
+    .booking-button a,
+    .my-trips-button a,
+    .profile-button a {
         padding: 0 30px;
     }
 

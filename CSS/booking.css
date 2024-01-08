@@ -26,7 +26,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 2rem 0 3rem 0;
 }
 
@@ -36,7 +36,7 @@ h2 {
     font-weight: 700;
     font-style: normal;
     font-size: 26px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 0.5rem 0 2rem 0;
 }
 
@@ -45,7 +45,7 @@ h3 {
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 0 0 0 2rem;
 }
 
@@ -54,7 +54,7 @@ h4 {
     font-weight: 700;
     font-style: normal;
     font-size: 20px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 2rem 0 -1rem 1rem;
 }
 
@@ -62,7 +62,7 @@ main p {
     font-family: "Cambria", sans-serif;
     line-height: 1;
     font-size: 20px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 0 0 0 1rem;
 }
 
@@ -105,15 +105,15 @@ main p {
         font-weight: 700;
         font-style: normal;
         font-size: 24px;
-        color:rgba(0, 0, 0, 0.75);
+        color: rgba(0, 0, 0, 0.75);
         margin: 2rem 0 -1rem 1rem;
     }
-    
+
     main p {
         font-family: "Cambria", sans-serif;
         line-height: 1;
         font-size: 24px;
-        color:rgba(0, 0, 0, 0.75);
+        color: rgba(0, 0, 0, 0.75);
         margin: 0 0 0 1rem;
     }
 }
@@ -224,7 +224,7 @@ nav a:hover {
 }
 
 /* Pil-element bredvid nav-länk. */
-nav .fa-solid  {
+nav .fa-solid {
     color: rgb(0, 0, 0, 0.75);
     margin: 5px;
 }
@@ -363,7 +363,7 @@ main .fa-solid {
     }
 
     nav a:hover {
-        background-color:#D6ECE8;
+        background-color: #D6ECE8;
         color: #395513;
         text-decoration: none;
     }
@@ -384,7 +384,12 @@ main .fa-solid {
 }
 
 /* Olika bokningsfält. */
-.adress, .date, .time, .occurence, .return, .save-trip {
+.adress,
+.date,
+.time,
+.occurence,
+.return,
+.save-trip {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -402,7 +407,12 @@ form {
     box-shadow: 0 3px 3px 0 #6c6c6c;
 }
 
-.book-adress, .book-date, .book-time, .book-occurence, .book-return, .book-save {
+.book-adress,
+.book-date,
+.book-time,
+.book-occurence,
+.book-return,
+.book-save {
     display: flex;
     flex-direction: column;
     background-color: #E4EEE4;
@@ -527,14 +537,20 @@ form {
     height: 35px;
 }
 
-#one-time, #weekdays, #each-week, #each-month {
+#one-time,
+#weekdays,
+#each-week,
+#each-month {
     padding: 2rem;
     width: 35px;
     position: relative;
     right: 5rem;
 }
 
-#once, #weekday, #weekly, #monthly {
+#once,
+#weekday,
+#weekly,
+#monthly {
     position: relative;
     top: 1.8rem;
     left: 1rem;
@@ -554,14 +570,16 @@ form {
     height: 35px;
 }
 
-#return-yes, #return-no {
+#return-yes,
+#return-no {
     padding: 2rem;
     width: 35px;
     position: relative;
     right: 5rem;
 }
 
-#return1, #return2 {
+#return1,
+#return2 {
     position: relative;
     top: 1.8rem;
     font-size: 20px;
@@ -580,14 +598,16 @@ form {
     height: 35px;
 }
 
-#save-yes, #save-no {
+#save-yes,
+#save-no {
     padding: 2rem;
     width: 35px;
     position: relative;
     right: 5rem;
 }
 
-#save1, #save2 {
+#save1,
+#save2 {
     position: relative;
     top: 1.8rem;
     font-size: 20px;
@@ -602,13 +622,15 @@ form {
 }
 
 /* Knappar. */
-.booking-button, .cancel-button {
+.booking-button,
+.cancel-button {
     display: flex;
     justify-content: center;
     margin: 1rem 0 1rem 0;
 }
 
-.booking-button a, .cancel-button a {
+.booking-button a,
+.cancel-button a {
     background-color: #ffffff;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -620,7 +642,8 @@ form {
     font-weight: bold;
 }
 
-.booking-button a:hover, .cancel-button a:hover {
+.booking-button a:hover,
+.cancel-button a:hover {
     background-color: #40403F;
     color: #ffffff;
 }
@@ -629,15 +652,33 @@ form {
 
 @media (min-width: 769px) {
 
-    .booking-button a, .cancel-button a {
+    .booking-button a,
+    .cancel-button a {
         padding: 0 30px;
     }
 
-    .adress, .date, .time, .occurence, .return, .save-trip {
+    .adress,
+    .date,
+    .time,
+    .occurence,
+    .return,
+    .save-trip {
         width: 400px;
     }
 
-    #pickup-adress, #destination, #pickup-date, #return, #pickup-time, #asap, #once, #weekday, #weekly, #monthly, #save1, #save2, form input {
+    #pickup-adress,
+    #destination,
+    #pickup-date,
+    #return,
+    #pickup-time,
+    #asap,
+    #once,
+    #weekday,
+    #weekly,
+    #monthly,
+    #save1,
+    #save2,
+    form input {
         font-size: 24px;
     }
 }
@@ -657,19 +698,25 @@ form {
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .book-adress, .book-occurence, .book-time, .book-date, .book-save {
+    .book-adress,
+    .book-occurence,
+    .book-time,
+    .book-date,
+    .book-save {
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 275px;
     }
 
-    .adress, .occurence {
+    .adress,
+    .occurence {
         width: 75%;
         max-width: 600px;
     }
-    
-    .date, .save-trip {
+
+    .date,
+    .save-trip {
         width: 75%;
         max-width: 600px;
     }

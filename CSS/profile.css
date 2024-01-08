@@ -26,7 +26,7 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 2rem 0 3rem 0;
 }
 
@@ -36,7 +36,7 @@ h2 {
     font-weight: 700;
     font-style: normal;
     font-size: 26px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 0.5rem 0 2rem 0;
 }
 
@@ -45,7 +45,7 @@ h3 {
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 0 0 0 2rem;
 }
 
@@ -54,7 +54,7 @@ h4 {
     font-weight: 700;
     font-style: normal;
     font-size: 20px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 2rem 0 -1rem 1rem;
 }
 
@@ -66,7 +66,7 @@ main p {
     font-family: "Cambria", sans-serif;
     line-height: 1;
     font-size: 20px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     margin: 0 0 0 1rem;
 }
 
@@ -109,19 +109,19 @@ main p {
         font-weight: 700;
         font-style: normal;
         font-size: 24px;
-        color:rgba(0, 0, 0, 0.75);
+        color: rgba(0, 0, 0, 0.75);
         margin: 2rem 0 -1rem 1rem;
     }
 
     #h4-name {
         margin-top: 2rem;
     }
-    
+
     main p {
         font-family: "Cambria", sans-serif;
         line-height: 1;
         font-size: 24px;
-        color:rgba(0, 0, 0, 0.75);
+        color: rgba(0, 0, 0, 0.75);
         margin: 0 0 0 1rem;
     }
 }
@@ -232,7 +232,7 @@ nav a:hover {
 }
 
 /* Pil-element bredvid nav-länk. */
-nav .fa-solid  {
+nav .fa-solid {
     color: rgb(0, 0, 0, 0.75);
     margin: 5px;
 }
@@ -371,7 +371,7 @@ main .fa-solid {
     }
 
     nav a:hover {
-        background-color:#D6ECE8;
+        background-color: #D6ECE8;
         color: #395513;
         text-decoration: none;
     }
@@ -413,20 +413,24 @@ form input {
     height: 35px;
 }
 
-#book, #cancel, #pickup {
+#book,
+#cancel,
+#pickup {
     padding: 2rem;
     width: 35px;
     position: relative;
     right: -1rem;
 }
 
-#booking, #cancelling, #pickup-notice {
+#booking,
+#cancelling,
+#pickup-notice {
     position: relative;
     top: 1.9rem;
     left: 4rem;
     font-family: "Cambria", sans-serif;
     font-size: 20px;
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 .info-notice {
@@ -455,13 +459,15 @@ form input {
 }
 
 /* Knappar. */
-.change-button, .index-button {
+.change-button,
+.index-button {
     display: flex;
     justify-content: center;
     margin: 2rem 0 0 0;
 }
 
-.change-button a, .index-button a {
+.change-button a,
+.index-button a {
     background-color: #ffffff;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -473,7 +479,8 @@ form input {
     font-weight: bold;
 }
 
-.change-button a:hover, .index-button a:hover {
+.change-button a:hover,
+.index-button a:hover {
     background-color: #40403F;
     color: #ffffff;
 }
@@ -487,7 +494,8 @@ form input {
         flex-direction: row;
     }
 
-    .change-button a, .index-button a {
+    .change-button a,
+    .index-button a {
         padding: 0 30px;
     }
 
@@ -499,7 +507,9 @@ form input {
         max-width: 70ch;
     }
 
-    #booking, #cancelling, #pickup-notice {
+    #booking,
+    #cancelling,
+    #pickup-notice {
         font-size: 24px;
     }
 
@@ -520,7 +530,9 @@ form input {
         width: 50%;
     }
 
-    .information, #notices, .info-notice {
+    .information,
+    #notices,
+    .info-notice {
         display: flex;
         flex-direction: column;
     }
@@ -538,7 +550,7 @@ form input {
         margin-top: -1.5rem;
     }
 
-    .info-notice{
+    .info-notice {
         grid-column-start: 2;
     }
 
