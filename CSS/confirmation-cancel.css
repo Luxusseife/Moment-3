@@ -443,8 +443,7 @@ main a:hover .fa-caret-right {
     }
 
     .my-trips-button a,
-    .book-button a,
-    a {
+    .book-button a {
         padding: 0 30px;
         margin: 1rem;
         display: inline-block;
@@ -455,7 +454,7 @@ main a:hover .fa-caret-right {
     }
 
     .confirmation-cancel p {
-        max-width: 70ch;
+        max-width: 68ch;
     }
 }
 
@@ -480,7 +479,7 @@ footer a {
     font-style: normal;
     color: #ffffff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* Hover-effekt på footer-länkar. */

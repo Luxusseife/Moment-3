@@ -426,6 +426,11 @@ main a:hover .fa-caret-right {
     padding: 0 0 0 2.5rem;
 }
 
+mark {
+    background-color: rgb(242, 169, 0, 0);
+    color: rgba(0, 0, 0, 0.75);
+}
+
 /* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 769PX. */
 
 @media (min-width: 769px) {
@@ -453,7 +458,7 @@ main a:hover .fa-caret-right {
         margin-right: auto;
         margin-left: auto;
         font-size: 24px;
-        max-width: 70ch;
+        max-width: 68ch;
     }
 
     .info-choices ul {
@@ -482,7 +487,7 @@ footer a {
     font-style: normal;
     color: #ffffff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* Hover-effekt på footer-länkar. */

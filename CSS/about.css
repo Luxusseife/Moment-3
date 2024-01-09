@@ -371,7 +371,7 @@ main a:hover .fa-caret-right {
 }
 
 .info p {
-    max-width: 70ch;
+    max-width: 68ch;
 }
 
 .info ul {
@@ -380,7 +380,7 @@ main a:hover .fa-caret-right {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.75);
     margin: 0 0 0 2rem;
-    max-width: 70ch;
+    max-width: 68ch;
     padding: 0 0 0 2.5rem;
 }
 
@@ -413,7 +413,7 @@ footer a {
     font-style: normal;
     color: #ffffff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* Hover-effekt på footer-länkar. */

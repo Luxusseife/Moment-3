@@ -456,7 +456,7 @@ main a:hover .fa-xmark {
     }
 
     .confirmation-booking p {
-        max-width: 70ch;
+        max-width: 68ch;
     }
 }
 
@@ -481,7 +481,7 @@ footer a {
     font-style: normal;
     color: #ffffff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* Hover-effekt på footer-länkar. */
