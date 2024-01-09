@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hässleholms Färdtjänst - Registrering</title>
+    <title>Hässleholms Färdtjänst - Registrera dig</title>
 
     <link rel="icon" href="Assets/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/ogy3xgi.css">
@@ -14,7 +14,7 @@
 
 <body>
     <header class="header">
-        <a href="./login.html"><img id="logo" src="Assets/logo.png" alt="Logotyp"></a>
+        <a href="./index.html"><img id="logo" src="Assets/logo.png" alt="Logotyp"></a>
 
         <!-- Menyknapp för att öppna mobilmenyn-->
         <button class="menu-btn open" id="open-menu">
@@ -37,7 +37,10 @@
                 <span class="menu-text">STÄNG</span>
             </button>
             <ul>
-                <li><a href="./login.html">Logga in<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./index.html">Startsida<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./my-trips.html">Mina resor<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./profile.html">Profil<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./logout.html">Logga ut<i class="fa-solid fa-caret-right"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -45,34 +48,79 @@
     <main>
         <div class="nuts-container">
 
-            <h1>Registrering</h1>
-            <div class="reg-form">
-                <form>
-                    <label id="user-number" for="user">Personnummer</label>
-                    <input type="text" id="user" placeholder="Personnummer">
-                </form>
-            </div>
-            <span class="reg-button">
-                <a href="./login.html">Registrera<i class="fa-solid fa-caret-right"></i></a>
-            </span>
+            <h1>Registrera dig</h1>
 
-            <div class="info-registration">
-                <h2>Om registrering</h2>
-                <p>
-                    Registreringen fungerar endast för dig med ett färdtjänsttillstånd kopplat till ditt personnummer.
-                </p>
+            <div class="profile">
+                <div class="information">
+                    <h4 id="h4-name">Namn:</h4>
+                    <br>
+                    <p>
+                        Kerstin Larsson
+                    </p>
+
+                    <h4>Personnummer:</h4>
+                    <br>
+                    <p>
+                        19430229-3544
+                    </p>
+
+                    <h4>Adress:</h4>
+                    <br>
+                    <form>
+                        <label id="change-adress" for="adress"></label>
+                        <input type="text" id="adress" name="change-adress" placeholder="Adress">
+                    </form>
+
+                    <h4>Mobilnummer:</h4>
+                    <br>
+                    <form>
+                        <label id="change-number" for="phone"></label>
+                        <input type="text" id="phone" name="change-number" placeholder="Mobilnummer">
+                    </form>
+
+                    <h4>Hjälpmedel:</h4>
+                    <br>
+                    <form>
+                        <label id="change-needs" for="needs"></label>
+                        <input type="text" id="needs" name="change-needs" placeholder="Hjälpmedel">
+                    </form>
+                </div>
+                <div id="notices">
+                    <h4 id="h4-notices">Valda aviseringar, sms:</h4>
+                    <br>
+                    <form>
+                        <label id="booking" for="book">Bekräftelse, bokning</label>
+                        <input type="radio" id="book" name="notice1" value="yes">
+                        <br>
+                        <label id="cancelling" for="cancel">Bekräftelse, avbokning</label>
+                        <input type="radio" id="cancel" name="notice2" value="yes">
+                        <br>
+                        <label id="pickup-notice" for="pickup">Notis innan upphämtning</label>
+                        <input type="radio" id="pickup" name="notice3" value="yes">
+                    </form>
+
+                    <div class="info-notice">
+                        <h2>Om aviseringar</h2>
+                        <p>
+                            Notis innan upphämtning sker cirka 1 timme innan avtalad upphämtning.
+                        </p>
+                    </div>
+                </div>
             </div>
 
+            <div class="button-container">
+                <span class="reg-button">
+                    <a href="./login.html">Registrera<i class="fa-solid fa-caret-right"></i></a>
+                </span>
+            </div>
         </div>
-
     </main>
 
     <footer>
         <p>
-            <a href="./about-not-login.html">Om Hässleholms Färdtjänst<i class="fa-solid fa-caret-right"></i></a>
+            <a href="./about.html">Om Hässleholms Färdtjänst<i class="fa-solid fa-caret-right"></i></a>
             <br>
-            <a href="./accessibility-not-login.html">Tillgänglighetsredogörelse<i
-                    class="fa-solid fa-caret-right"></i></a>
+            <a href="./accessibility.html">Tillgänglighetsredogörelse<i class="fa-solid fa-caret-right"></i></a>
         </p>
     </footer>
 
