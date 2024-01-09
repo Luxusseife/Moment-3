@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hässleholms Färdtjänst - Startsida</title>
+    <title>Hässleholms Färdtjänst - Inloggning</title>
 
     <link rel="icon" href="Assets/favicon.ico">
     <link rel="stylesheet" href="https://use.typekit.net/ogy3xgi.css">
@@ -37,63 +37,44 @@
                 <span class="menu-text">STÄNG</span>
             </button>
             <ul>
-                <li><a href="./index.html">Startsida<i class="fa-solid fa-caret-right"></i></a></li>
-                <li><a href="./my-trips.html">Mina resor<i class="fa-solid fa-caret-right"></i></a></li>
-                <li><a href="./profile.html">Profil<i class="fa-solid fa-caret-right"></i></a></li>
-                <li><a href="./logout.html">Logga ut<i class="fa-solid fa-caret-right"></i></a></li>
+                <li><a href="./index.html">Logga in<i class="fa-solid fa-caret-right"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="background-img-container">
-
-            <h1>Vad vill du göra idag?</h1>
-
-            <div class="button-container">
-                <span class="booking-button">
-                    <a href="./booking.html">Boka resa<i class="fa-solid fa-caret-right"></i></a>
-                </span>
-
-                <span class="my-trips-button">
-                    <a href="./my-trips.html">Se Mina resor<i class="fa-solid fa-caret-right"></i></a>
-                </span>
-
-                <span class="profile-button">
-                    <a href="./profile.html">Se profil<i class="fa-solid fa-caret-right"></i></a>
-                </span>
+            <h1>Inloggning</h1>
+            <div class="login-form">
+                <form>
+                    <label id="user-number" for="user">Kundnummer</label>
+                    <input type="text" id="user" placeholder="Kundnummer" required>
+                    <br>
+                    <br>
+                    <label id="password-number" for="password">Lösenord</label>
+                    <input type="password" id="password" placeholder="Lösenord" required>
+                </form>
             </div>
+            <span class="login-button">
+                <a href="./index.html">Logga in<i class="fa-solid fa-caret-right"></i></a>
+            </span>
 
-            <article class="info-choices">
-                <h2>Information</h2>
-                <h3>Välj <mark>Boka resa</mark> om du vill:</h3>
-                <ul>
-                    <li>boka en ny resa.</li>
-                </ul>
+            <section class="info-registration">
+                <h2>Saknar du ett konto?</h2>
                 <br>
-                <br>
-                <h3>Välj <mark>Se Mina resor</mark> om du vill:</h3>
-                <ul>
-                    <li>se dina redan bokade resor eller sparade resor.</li>
-                    <li>boka nya resor utifrån dina bokade resor eller sparade resor.</li>
-                    <li>ändra eller avboka dina bokade resor.</li>
-                </ul>
-                <br>
-                <br>
-                <h3>Välj <mark>Se Profil</mark> om du vill:</h3>
-                <ul>
-                    <li>se din profil med uppgifter om din person och dina behov.</li>
-                    <li>ändra uppgifter i din profil.</li>
-                </ul>
-            </article>
+                <span class="reg-button">
+                    <a href="./register.html">Registrering<i class="fa-solid fa-caret-right"></i></a>
+                </span>
+            </section>
         </div>
     </main>
 
     <footer>
         <p>
-            <a href="./about.html">Om Hässleholms Färdtjänst<i class="fa-solid fa-caret-right"></i></a>
+            <a href="./about-not-login.html">Om Hässleholms Färdtjänst<i class="fa-solid fa-caret-right"></i></a>
             <br>
-            <a href="./accessibility.html">Tillgänglighetsredogörelse<i class="fa-solid fa-caret-right"></i></a>
+            <a href="./accessibility-not-login.html">Tillgänglighetsredogörelse<i
+                    class="fa-solid fa-caret-right"></i></a>
         </p>
     </footer>
 
