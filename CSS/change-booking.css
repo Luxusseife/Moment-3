@@ -202,12 +202,14 @@ nav a:hover .fa-solid {
 }
 
 /* Pil-ikon bredvid main-länkar stylade som knappar. */
-main .fa-caret-right, .fa-xmark {
+main .fa-caret-right,
+.fa-xmark {
     color: rgb(0, 0, 0, 0.75);
     margin: 15px;
 }
 
-main a:hover .fa-caret-right, main a:hover .fa-xmark {
+main a:hover .fa-caret-right,
+main a:hover .fa-xmark {
     color: #ffffff;
 }
 
@@ -438,8 +440,9 @@ form {
     font-size: 20px;
 }
 
-#adress1, #adress2 {
-        font-family: "Cambria", sans-serif;
+#adress1,
+#adress2 {
+    font-family: "Cambria", sans-serif;
 }
 
 /* Formulär, inmatningsfält för datum och radioknapp. */
@@ -465,7 +468,7 @@ form {
     font-size: 20px;
 }
 
-#date{
+#date {
     font-family: "Cambria", sans-serif;
 }
 
@@ -619,7 +622,7 @@ form {
 #save1,
 #save2,
 form input {
-    color:rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 /* Knappar, container. */

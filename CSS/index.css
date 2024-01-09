@@ -393,7 +393,7 @@ main a:hover .fa-caret-right {
 
 .booking-button a:hover,
 .my-trips-button a:hover,
-.profile-button a:hover, 
+.profile-button a:hover,
 .fa-solid i:hover {
     background-color: #40403F;
     color: #ffffff;

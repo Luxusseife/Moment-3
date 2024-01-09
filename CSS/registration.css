@@ -407,7 +407,7 @@ main a:hover .fa-caret-right {
 }
 
 /* Aktiva labels dolda i texten. */
-#change-adress, 
+#change-adress,
 #change-number,
 #change-needs {
     border: 0;
@@ -504,7 +504,9 @@ form input {
 }
 
 /* Inmatningsfält för att ändra uppgifter. */
-#adress, #phone, #needs {
+#adress,
+#phone,
+#needs {
     margin: 0 0 0 1.2rem;
 }
 
