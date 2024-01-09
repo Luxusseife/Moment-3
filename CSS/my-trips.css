@@ -46,7 +46,7 @@ h3 {
     font-style: normal;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.75);
-    margin: 0 0 0 2rem;
+    margin: 1rem 0 0 1rem;
 }
 
 h4 {
@@ -97,7 +97,7 @@ main p {
         font-style: normal;
         font-size: 28px;
         color: rgba(0, 0, 0, 0.75);
-        margin: 0 0 0 2rem;
+        margin: 1rem 0 0 1rem;
     }
 
     h4 {
@@ -327,13 +327,13 @@ main a:hover .fa-caret-right, main a:hover .fa-xmark {
     nav a {
         background-color: transparent;
         border: none;
-        border-radius: 5px;
         color: #395513;
         padding: 20px 0;
+        margin: 0 0.5rem 0 0.5rem;
         box-shadow: none;
         text-decoration: none;
         font-size: 24px;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     nav li:hover {

@@ -46,7 +46,7 @@ h3 {
     font-style: normal;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.75);
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 1rem;
 }
 
 h4 {
@@ -87,7 +87,7 @@ main p {
         font-style: normal;
         font-size: 32px;
         color: rgba(0, 0, 0, 0.75);
-        margin: 0.5rem 0 2rem 0;
+        margin: 0.5rem 0 4rem 0;
     }
 
     h3 {
@@ -96,7 +96,7 @@ main p {
         font-style: normal;
         font-size: 28px;
         color: rgba(0, 0, 0, 0.75);
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 1rem;
     }
 
     main p {
@@ -316,13 +316,13 @@ main a:hover .fa-caret-right {
     nav a {
         background-color: transparent;
         border: none;
-        border-radius: 5px;
         color: #395513;
         padding: 20px 0;
+        margin: 0 0.5rem 0 0.5rem;
         box-shadow: none;
         text-decoration: none;
         font-size: 24px;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     nav li:hover {
@@ -406,7 +406,7 @@ main a:hover .fa-caret-right {
     border: 1px solid rgb(0, 0, 0, 0.75);
     border-radius: 5px;
     width: 300px;
-    height: 875px;
+    height: 825px;
     background-color: rgb(242, 169, 0, 0.35);
     margin: 5rem auto 2rem auto;
 }
@@ -433,17 +433,20 @@ main a:hover .fa-caret-right {
     .button-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .booking-button a,
     .my-trips-button a,
     .profile-button a {
         padding: 0 30px;
+        margin: 1rem;
+        display: inline-block;
     }
 
     .info-choices {
-        width: 800px;
-        height: 675px;
+        width: 775px;
+        height: 625px;
     }
 
     .info-choices p {

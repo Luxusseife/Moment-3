@@ -314,13 +314,13 @@ main a:hover .fa-caret-right {
     nav a {
         background-color: transparent;
         border: none;
-        border-radius: 5px;
         color: #395513;
         padding: 20px 0;
+        margin: 0 0.5rem 0 0.5rem;
         box-shadow: none;
         text-decoration: none;
         font-size: 24px;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     nav li:hover {
