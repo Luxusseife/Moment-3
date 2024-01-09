@@ -378,7 +378,7 @@ main a:hover .fa-caret-right {
 /* MAIN. */
 
 /* Bakgrundsbild, container. */
-.nuts-container {
+.background-img-container {
     position: relative;
     background-image: url("../Assets/nuts.png");
     background-repeat: no-repeat;
@@ -392,7 +392,7 @@ main a:hover .fa-caret-right {
 }
 
 /* Information med text. */
-.profile {
+.profile-container {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -449,6 +449,20 @@ form input {
     margin-right: auto;
     margin-left: auto;
     width: 80%;
+}
+
+/* Aktiva labels dolda i texten. */
+#change-adress, 
+#change-number,
+#change-needs {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /* Knappar, container. */
@@ -515,11 +529,11 @@ form input {
         padding: 0 30px;
     }
 
-    .profile {
+    .profile-container {
         width: 500px;
     }
 
-    .profile p {
+    .profile-container p {
         max-width: 70ch;
     }
 
@@ -544,7 +558,7 @@ form input {
 
 @media (min-width: 1440px) {
 
-    .profile {
+    .profile-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;

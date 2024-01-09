@@ -358,7 +358,7 @@ main a:hover .fa-caret-right, main a:hover .fa-xmark {
 /* MAIN. */
 
 /* Bakgrundsbild, container. */
-.nuts-container {
+.background-img-container {
     position: relative;
     background-image: url("../Assets/nuts.png");
     background-repeat: no-repeat;

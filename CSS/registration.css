@@ -378,7 +378,7 @@ main a:hover .fa-caret-right {
 /* MAIN. */
 
 /* Bakgrundsbild, container. */
-.nuts-container {
+.background-img-container {
     position: relative;
     background-image: url("../Assets/nuts.png");
     background-repeat: no-repeat;
@@ -402,6 +402,20 @@ main a:hover .fa-caret-right {
 .information {
     display: flex;
     flex-direction: column;
+}
+
+/* Aktiva labels dolda i texten. */
+#change-adress, 
+#change-number,
+#change-needs {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
 /* Formulär för radioknappar. */
