@@ -191,13 +191,22 @@ nav a:hover {
 
 /* Pil-element bredvid nav-länk. */
 nav .fa-solid {
-    color: rgb(0, 0, 0, 0.75);
+    color: #395513;
     margin: 5px;
 }
 
-main .fa-solid {
+nav a:hover .fa-solid {
+    color: #ffffff;
+}
+
+/* Pil-ikon bredvid main-länkar stylade som knappar. */
+main .fa-caret-right {
     color: rgb(0, 0, 0, 0.75);
     margin: 15px;
+}
+
+main a:hover .fa-caret-right {
+    color: #ffffff;
 }
 
 /* Meny-knapp, öppnar menyn nav. */
@@ -211,12 +220,13 @@ main .fa-solid {
 
 .open {
     margin: 0 5% 0 0;
-    border: none;
+    border: 1px solid #D6ECE8;
+    border-radius: 5px;
 }
 
-/*.menu-btn:hover {
-    background-color: rgb(140, 133, 123, 0.25);
-}*/
+.menu-btn:hover {
+    background-color: #ffffff;
+}
 
 .menu-icon {
     margin-right: 5px;
@@ -245,6 +255,8 @@ main .fa-solid {
     margin-top: 1rem;
     padding: 10px 10px;
     border: none;
+    border: 1px solid #D6ECE8;
+    border-radius: 5px;
 }
 
 /* Stäng-ikon, två lodräta streck som roterar till ett kryss. */
@@ -333,7 +345,15 @@ main .fa-solid {
         color: #395513;
         text-decoration: none;
     }
+
+    nav a:hover .fa-solid {
+        color: #395513;
+    }
 }
+
+
+
+/* MAIN. */
 
 /* Bakgrundsbild, container. */
 .nuts-container {
@@ -382,7 +402,8 @@ main .fa-solid {
 
 .booking-button a:hover,
 .my-trips-button a:hover,
-.profile-button a:hover {
+.profile-button a:hover, 
+.fa-solid i:hover {
     background-color: #40403F;
     color: #ffffff;
 }
