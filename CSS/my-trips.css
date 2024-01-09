@@ -202,12 +202,12 @@ nav a:hover .fa-solid {
 }
 
 /* Pil-ikon bredvid main-länkar stylade som knappar. */
-main .fa-caret-right {
+main .fa-caret-right, .fa-xmark {
     color: rgb(0, 0, 0, 0.75);
     margin: 15px;
 }
 
-main a:hover .fa-caret-right {
+main a:hover .fa-caret-right, main a:hover .fa-xmark {
     color: #ffffff;
 }
 
