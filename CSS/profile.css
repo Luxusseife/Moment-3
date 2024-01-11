@@ -399,6 +399,7 @@ main a:hover .fa-caret-right {
     flex-direction: column;
     width: 300px;
     margin: 2rem auto 2rem auto;
+    overflow-x: hidden;
 }
 
 .information {

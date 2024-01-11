@@ -373,6 +373,12 @@ main a:hover .fa-xmark {
     z-index: -1;
 }
 
+/* Container för alla boknings-rutor. */
+
+.booking-container {
+    overflow-x: hidden;
+}
+
 /* Olika bokningsfält. */
 .adress,
 .date,

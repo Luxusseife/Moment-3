@@ -399,6 +399,7 @@ main a:hover .fa-caret-right {
     flex-direction: column;
     width: 300px;
     margin: 2rem auto 2rem auto;
+    overflow-x: hidden;
 }
 
 .information {
@@ -525,6 +526,10 @@ form input {
 @media (min-width: 769px) {
     .reg-button a {
         padding: 0 30px;
+    }
+
+    .profile {
+        overflow-x: visible;
     }
 
     .profile p {
