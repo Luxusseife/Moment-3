@@ -510,10 +510,6 @@ form input {
         width: 500px;
     }
 
-    .profile p {
-        max-width: 68ch;
-    }
-
     #booking,
     #cancelling,
     #pickup-notice {
@@ -535,6 +531,7 @@ form input {
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
         width: 60%;
+        overflow-x: visible;
     }
 
     .information,

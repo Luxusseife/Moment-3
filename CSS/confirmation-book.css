@@ -389,8 +389,6 @@ main a:hover .fa-xmark {
 }
 
 .booking {
-    display: flex;
-    flex-direction: column;
     background-color: #E4EEE4;
     border: 1px solid rgb(0, 0, 0, 0.75);
     border-radius: 5px;

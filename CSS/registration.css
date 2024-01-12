@@ -402,11 +402,6 @@ main a:hover .fa-caret-right {
     overflow-x: hidden;
 }
 
-.information {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Aktiva labels dolda i texten. */
 #change-adress,
 #change-number,

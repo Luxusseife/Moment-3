@@ -375,8 +375,6 @@ main a:hover .fa-xmark {
 
 /* Informationsfält med text. */
 .confirmation-booking {
-    display: flex;
-    flex-direction: column;
     width: 300px;
     margin: 2rem auto 2rem auto;
 }
@@ -389,8 +387,6 @@ main a:hover .fa-xmark {
 }
 
 .booking {
-    display: flex;
-    flex-direction: column;
     background-color: #E4EEE4;
     border: 1px solid rgb(0, 0, 0, 0.75);
     border-radius: 5px;
@@ -456,7 +452,7 @@ main a:hover .fa-xmark {
     }
 
     .confirmation-booking p {
-        max-width: 68ch;
+        max-width: 60ch;
     }
 }
 

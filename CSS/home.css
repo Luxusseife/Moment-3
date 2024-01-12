@@ -401,8 +401,6 @@ main a:hover .fa-caret-right {
 
 /* Informationsfält med text och lista. */
 .info-choices {
-    display: flex;
-    flex-direction: column;
     border: 1px solid rgb(0, 0, 0, 0.75);
     border-radius: 5px;
     width: 300px;
