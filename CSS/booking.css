@@ -708,66 +708,6 @@ form input {
     }
 }
 
-/* MEDIA QUERY FÖR INNEHÅLL, SKÄRMAR STÖRRE ÄN 1440PX. */
-
-@media (min-width: 1440px) {
-
-    .button-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .booking-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .book-adress,
-    .book-occurence,
-    .book-time,
-    .book-date,
-    .book-save {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 275px;
-    }
-
-    .adress,
-    .occurence {
-        width: 75%;
-        max-width: 600px;
-    }
-
-    .date,
-    .save-trip {
-        width: 75%;
-        max-width: 600px;
-    }
-
-    .time {
-        width: 75%;
-        max-width: 600px;
-    }
-
-    .adress {
-        grid-column-start: 1;
-    }
-
-    .date {
-        grid-column-start: 2;
-    }
-
-    .time {
-        grid-column-start: 3;
-    }
-
-    .occurence {
-        grid-column-start: 1;
-    }
-}
-
 
 
 /* FOOTER. */
