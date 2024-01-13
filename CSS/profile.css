@@ -395,16 +395,9 @@ main a:hover .fa-caret-right {
 
 /* Information med text. */
 .profile {
-    display: flex;
-    flex-direction: column;
     width: 300px;
     margin: 2rem auto 2rem auto;
     overflow-x: hidden;
-}
-
-.information {
-    display: flex;
-    flex-direction: column;
 }
 
 /* Formulär för radioknappar. */
@@ -532,13 +525,6 @@ form input {
         place-items: center;
         width: 60%;
         overflow-x: visible;
-    }
-
-    .information,
-    #notices,
-    .info-notice {
-        display: flex;
-        flex-direction: column;
     }
 
     .information {

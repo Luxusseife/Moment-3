@@ -402,11 +402,6 @@ main a:hover .fa-caret-right {
     overflow-x: hidden;
 }
 
-.information {
-    display: flex;
-    flex-direction: column;
-}
-
 /* Formulär för radioknappar. */
 form label {
     display: block;
@@ -572,13 +567,6 @@ form input {
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
         width: 60%;
-    }
-
-    .information,
-    #notices,
-    .info-notice {
-        display: flex;
-        flex-direction: column;
     }
 
     .information {

@@ -569,13 +569,6 @@ form input {
         margin-top: 4rem;
     }
 
-    .information,
-    #notices,
-    .info-notice {
-        display: flex;
-        flex-direction: column;
-    }
-
     .information {
         grid-column-start: 1;
         grid-column-end: 2;
